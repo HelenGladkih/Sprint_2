@@ -26,4 +26,4 @@ class EmployeeSalary:
     def salary(self):
         if self.hours is None:
             raise ValueError("Не удалось определить отработанные часы: нет входных данных")
-        return self.hours * self.__class__.hourly_payment
+        return self.hours * self.hourly_payment
